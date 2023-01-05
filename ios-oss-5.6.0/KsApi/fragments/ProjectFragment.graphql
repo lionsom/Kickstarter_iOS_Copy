@@ -1,0 +1,80 @@
+fragment ProjectFragment on Project {
+  availableCardTypes
+  backersCount
+  category {
+    ...CategoryFragment
+  }
+  canComment
+  commentsCount(withReplies: true)
+  country {
+    ...CountryFragment
+  }
+  creator {
+    ...UserFragment
+  }
+  currency
+  deadlineAt
+  description
+  environmentalCommitments {
+    commitmentCategory
+    description
+    id
+  }
+  faqs {
+    nodes {
+      question
+      answer
+      id
+      createdAt
+    }
+  }
+  finalCollectionDate
+  fxRate
+  goal {
+    ...MoneyFragment
+  }
+  image {
+    id
+    url(width: 1024)
+  }
+  isProjectWeLove
+  isProjectOfTheDay
+  isWatched
+  isLaunched
+  launchedAt
+  location {
+    ...LocationFragment
+  }
+  maxPledge
+  minPledge
+  name
+  pid
+  pledged {
+    ...MoneyFragment
+  }
+  posts {
+    totalCount
+  }
+  prelaunchActivated
+  risks
+  slug
+  state
+  stateChangedAt
+  story
+  tags(scope: DISCOVER) {
+    name
+  }
+  url
+  usdExchangeRate
+  video {
+    id
+    videoSources {
+      high {
+        src
+      }
+      hls {
+        src
+      }
+    }
+  }
+}
