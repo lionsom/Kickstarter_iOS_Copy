@@ -1,3 +1,7 @@
+[swift 中的 @UIApplicationMain](https://juejin.cn/post/6844903541023178765)
+
+
+
 # @main 与 @UIApplicationMain
 
 ​		在C 语言中，程序的入口都是`main 函数`。对于一个`Objective-C` 的`iOS app` 项目，在新建项目时，Xcode 将帮助我们准备好一个`main.m` 文件，其中就有这个`main 函数`：
